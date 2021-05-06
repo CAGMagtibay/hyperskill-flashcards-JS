@@ -1,0 +1,32 @@
+.title {
+    font-family: Georgia, sans-serif;
+    background-color: white;
+    color: darkblue;
+}
+
+.quiz-area {
+    display: flex;
+    width: 1200px;
+    height: 1200px;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: white;
+    color: beige;
+    font-family: Georgia, sans-serif;
+    border: 2px solid darkblue;
+    flex-flow: row wrap;
+}
+
+.card {
+    width: 350px; 
+    height: 350px;
+    margin-bottom: 5px;
+    border: 1px solid darkblue;
+    border-radius: 20px; /* rounds corners */
+    background-color: lightskyblue;
+}
+
+.card p {
+    text-align: center;
+    text-decoration-color: darkblue;
+}
