@@ -1,0 +1,72 @@
+.title {
+    font-family: Georgia, sans-serif;
+    background-color: white;
+    color: darkblue;
+}
+
+.quiz-area {
+    display: flex;
+    width: 1200px;
+    height: 1200px;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: white;
+    color: beige;
+    font-family: Georgia, sans-serif;
+    border: 2px solid darkblue;
+    flex-flow: row wrap;
+}
+
+.container {
+    width: 350px;
+    height: 350px;
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 5px;
+    border: 1px solid darkblue;
+    border-radius: 20px; /* rounds corners */
+    background-color: lightskyblue;
+    /* z-index: auto; */
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.card p {
+    text-align: center;
+    text-decoration-color: darkblue;
+    font-size: 50px;
+}
+
+.container:hover .card{
+    transition: 1s;
+    transform: rotateY(180deg);
+}
+
+.front {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 5px;
+    border: 1px solid darkblue;
+    border-radius: 20px; /* rounds corners */
+    background-color: lightskyblue;
+    z-index: 2;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.back {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 5px;
+    border: 1px solid lightskyblue;
+    border-radius: 20px; /* rounds corners */
+    background-color: darkblue;
+    z-index: 1;
+    transform: rotateY(180deg);
+    /* backface-visibility: hidden; */
+    position: absolute;
+}
